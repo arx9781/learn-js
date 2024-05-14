@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a random Number!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+        }
+
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 4rem;
+
+            .firstRow {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: row;
+                width: 60%;
+
+                .squares {
+                    width: 33.33%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding: 2rem 1rem;
+                    border: 2px solid gray;
+                    border-top: none;
+                    border-bottom: none;
+                    margin: 0 1rem;
+
+                    p {
+                        font-size: 1.5rem;
+                        font-style: italic;
+                    }
+
+                    .label {
+                        font-size: 2rem;
+                        padding: .5rem;
+                        margin: 1.5rem 1rem;
+                        font-weight: bold;
+                        width: 55%;
+                        border-radius: 10px;
+                        background-color: lightgrey;
+                        text-align: center;
+                    }
+
+                    .submitButton {
+                        padding: 1rem 1.5rem;
+                        border: 2px solid transparent;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+
+                    .submitButton:hover {
+                        border-color: gray;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstRow">
+        <div class="squares">
+            <p>0 - 9</p>
+            <label id="topLeftSquare" class="label">-</label>
+            <button type="submit" class="submitButton" id="topLeft">Generate</button>
+        </div>
+        <div class="squares">
+            <p>1 - 50</p>
+            <label id="topCenterSquare" class="label">-</label>
+            <button type="submit" class="submitButton" id="topCenter">Generate</button>
+        </div>
+        <div class="squares">
+            <p>50 - 100</p>
+            <label id="topRightSquare" class="label">-</label>
+            <button type="submit" class="submitButton" id="topRight">Generate</button>
+        </div>
+    </div>
+    <script src="/Projects/random_number/randomNum.js" defer></script>
+</body>
+
+</html>
