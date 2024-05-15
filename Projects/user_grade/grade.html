@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user grade</title>
+
+    <style>
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: monospace;
+
+            h1 {
+                font-size: 2rem;
+                text-decoration: underline;
+            }
+
+            label {
+                font-size: 1.5rem;
+            }
+
+            #inputField {
+                padding: .2rem;
+                border: 2px solid transparent;
+                background-color: rgb(240, 240, 240);
+                padding: .5rem;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                outline: none;
+            }
+
+            #inputField:focus {
+                border-color: black;
+            }
+
+            #submit {
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: .5rem;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                font-family: inherit;
+                cursor: pointer;
+            }
+
+            #submit:hover {
+                border-color: black;
+            }
+
+            #resultField {
+                background-color: black;
+                padding: 1rem;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-div">
+        <h1>Check Your Grade</h1>
+        <div id="main-section">
+            <label for="inputField">Enter your Marks:</label>
+            <input type="text" id="inputField" placeholder="eg. 79">
+            <button type="submit" id="submit">Submit</button>
+            <p id="resultField">Your Grade Is: </p>
+        </div>
+    </div>
+
+    <script src="/Projects/user_grade/grade.js" defer></script>
+</body>
+
+</html>

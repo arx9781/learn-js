@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked page</title>
+    <style>
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            accent-color: black;
+
+            .main-container {
+                width: 40%;
+                padding: 1rem;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 0 auto;
+                border: 2px solid black;
+                border-radius: 10px;
+
+                input[type="checkbox"] {
+                    margin: .5rem;
+                    cursor: pointer;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+
+                label {
+                    font-size: 1.2rem;
+                }
+
+                .main-container-inner {
+                    width: 100%;
+                    margin: 1rem 0;
+                    border-radius: 10px;
+                    background-color: rgb(240, 240, 240);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                    .inner-left,
+                    .inner-right {
+                        width: 50%;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        flex-direction: column;
+
+
+                        input[type="radio"] {
+                            margin: 1rem;
+                            cursor: pointer;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
+
+                #submit {
+                    padding: 1rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    border: 2px solid transparent;
+                    width: 100%;
+                    font-family: inherit;
+                }
+
+                #submit:hover {
+                    border-color: black;
+                }
+
+                #resultField {
+                    background-color: black;
+                    color: white;
+                    width: 97%;
+                    padding: 1rem .5rem;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div>
+            <input type="checkbox" name="" id="rizzBtn">
+            <label for="rizzBtn">Are You A Rizzler</label>
+        </div>
+        <div class="main-container-inner">
+            <div class="inner-left">
+                <div>
+                    <input type="radio" name="genz" id="sigma">
+                    <label for="sigma">Sigma</label>
+                </div>
+                <div>
+                    <input type="radio" name="genz" id="fanumTax">
+                    <label for="fanumTax">Fanum Tax</label>
+                </div>
+            </div>
+            <div class="inner-right">
+                <div>
+                    <input type="radio" name="genz" id="skibidi">
+                    <label for="skibidi">Skibidi</label>
+                </div>
+                <div>
+                    <input type="radio" name="genz" id="alpha">
+                    <label for="alpha">Alpha</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="submit">Vibe Check</button>
+        <p id="resultField">checking vibes...</p>
+    </div>
+
+    <script src="/03_Miscellanous/checked.js" defer></script>
+</body>
+
+</html>
