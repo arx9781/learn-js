@@ -15,3 +15,6 @@ This repository is your one-stop shop for mastering JavaScript, a powerful and v
 - **intermediate:** Once you've grasped the basics, dive into intermediate topics such as data structures (arrays, objects), DOM manipulation (interacting with web pages), and popular JavaScript libraries.
 - **advanced:** Ready for a challenge? This folder explores advanced concepts like asynchronous programming, object-oriented programming (OOP), and popular JavaScript frameworks for building complex web applications.
 - **misc:** This folder contains some JavaScript code that cannot be categorized into a particular folder, but are equally important to learn.
+
+**updates:**
+- I will keep updating this repo as I go along and learn new things.
